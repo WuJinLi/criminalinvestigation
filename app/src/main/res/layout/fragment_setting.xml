@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        style="@style/item_layout_style">
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_location" />
+
+        <TextView
+            style="@style/item_layout_text_style"
+            android:text="定位信息" />
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_tip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alter"
+        style="@style/item_layout_style">
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_alter" />
+
+        <TextView
+            style="@style/item_layout_text_style"
+            android:text="修改信息" />
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_tip" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_auto_login"
+        style="@style/item_layout_style"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_cancle" />
+
+        <TextView
+            style="@style/item_layout_text_style"
+            android:text="取消自动登录" />
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_tip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_out"
+        style="@style/item_layout_style"
+        >
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_login_out" />
+
+        <TextView
+            style="@style/item_layout_text_style"
+            android:text="退出登陆" />
+
+        <ImageView
+            style="@style/item_layout_img_style"
+            android:src="@drawable/img_tip" />
+    </LinearLayout>
+</LinearLayout>

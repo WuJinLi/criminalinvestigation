@@ -16,6 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets{
+        main{
+            jniLibs.srcDir 'libs'
+            jni.srcDirs=[]
+        }
+    }
 }
 
 dependencies {
@@ -25,4 +32,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //添加retrofit-会自动下载okhttp
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //添加retrofit gson转换会自动下载gson
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //添加返回的字符串支付
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
 }
